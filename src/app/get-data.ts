@@ -1,6 +1,11 @@
-
 import { DataSummary, DataEvent, DataSponsor } from 'mostate-rush/data-interfaces'
 const data = <DataSummary> require('mostate-rush/dist/events.json')
+
+export type DisplayEvent = DataEvent & {
+  displayDescription?: string
+}
+
+declare var twemoji: { parse: (str: string) => string }
 
 function compareEvents (a: DataEvent, b: DataEvent): number {
   let aTime = a.startTime || a.meetTime || 0
@@ -8,24 +13,35 @@ function compareEvents (a: DataEvent, b: DataEvent): number {
   return aTime - bTime
 }
 
-import { emojiList } from '../_emoji.list'
+import { emojiByName } from './emoji.list'
 const emojiFind = new RegExp(
-  emojiList
+  Object.keys(emojiByName)
+    .filter((a) => a.length > 2)
     .map((a) => a.replace(/\+/g, '\\+'))
     .map((a) => `\\b${a}\\b`)
-    .join('|') + '(s?)',
+    .join('|'),
   'gi')
-const emojiReplace = (match: string, s: string) => `<i class="icon-${match.toLowerCase()}" style="display:inline-block;vertical-align: sub;"></i>${s || ''}`
+const emojiReplace = (match: string) => emojiByName[match.toLowerCase()]
 
-function replaceEventEmojis (a: DataEvent): DataEvent {
-  let b = <DataEvent> Object.assign({}, a)
-  b.description = a.description.replace(emojiFind, emojiReplace)
+function replaceEventEmojis (a: DataEvent): DisplayEvent {
+  const unicoded = a.description.replace(emojiFind, emojiReplace)
+  const displayDescription = twemoji.parse(unicoded)
+  let b = <DisplayEvent>
+    Object.assign({ displayDescription }, a)
+  return b
+}
+
+function replaceEventSemicolons (a: DataEvent): DataEvent {
+  const commas = a.description.replace(/;/g, ',')
+  let b = <DisplayEvent>
+    Object.assign({}, a, { description: commas })
   return b
 }
 
 export function getData(): DataSummary {
   let events: DataEvent[] = data.events
     .sort(compareEvents)
+    .map(replaceEventSemicolons)
     .map(replaceEventEmojis)
 
   return {

@@ -11,7 +11,6 @@ var helpers = require('./helpers');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
-var SpritesmithPlugin = require('webpack-spritesmith');
 
 /**
  * Webpack Constants
@@ -60,7 +59,7 @@ module.exports = {
     // An array of extensions that should be used to resolve modules.
     //
     // See: http://webpack.github.io/docs/configuration.html#resolve-extensions
-    extensions: ['', '.ts', '.js'],
+    extensions: ['', '.ts', '.js', '.json'],
 
     // Make sure root is src
     root: helpers.root('src'),
@@ -94,8 +93,7 @@ module.exports = {
         loader: 'source-map-loader',
         exclude: [
           // these packages have problems with their sourcemaps
-          helpers.root('node_modules/rxjs'),
-          helpers.root('node_modules/@angular2-material')
+          helpers.root('node_modules/rxjs')
         ]
       }
 
@@ -206,20 +204,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       chunksSortMode: helpers.packageSort(['polyfills', 'vendor', 'main'])
-    }),
-
-    new SpritesmithPlugin({
-        src: {
-          cwd: helpers.root('src/_emoji'),
-          glob: '*.png'
-        },
-        target: {
-          image: helpers.root('src/spritesmith-generated/sprite.png'),
-          css: helpers.root('src/spritesmith-generated/sprite.css')
-        },
-        apiOptions: {
-          cssImageRef: "sprite.png"
-        }
     })
   ],
 

@@ -21,7 +21,7 @@
         </div>
         <div class="col-xs-3 info-sponsor">{{ sponsors[event.sponsor].nickname || event.sponsor }}</div>
         <div class="col-xs-2 info-time">{{ moment(event.startTime || event.meetTime).format('h:mma') }}</div>
-        <div class="col-xs-5 info-desc" [innerHTML]="security.bypassSecurityTrustHtml(event.description)"></div>
+        <div class="col-xs-5 info-desc" [innerHTML]="security.bypassSecurityTrustHtml(event.displayDescription || event.description)"></div>
       </div>
       <div class="row" style="font-size:.5em">
         <div class="col-xs-1"></div>

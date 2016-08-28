@@ -16,7 +16,7 @@
     "typings/main"
   ],
   "include": [
-    "src/custom-typings.d.ts",
+    // "src/custom-typings/index.d.ts",
     "typings/index.d.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
