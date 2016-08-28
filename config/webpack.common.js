@@ -191,8 +191,11 @@ module.exports = {
     //
     // See: https://www.npmjs.com/package/copy-webpack-plugin
     new CopyWebpackPlugin([{
-      from: 'src/assets',
-      to: 'assets'
+      from: 'src/thumbnails',
+      to: 'thumbnails'
+    }, {
+      from: '.github/CNAME',
+      to: ''
     }]),
 
     // Plugin: HtmlWebpackPlugin
