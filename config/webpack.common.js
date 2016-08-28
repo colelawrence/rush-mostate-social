@@ -196,6 +196,9 @@ module.exports = {
     }, {
       from: '.github/CNAME',
       to: ''
+    }, {
+      from: 'src/assets',
+      to: 'assets'
     }]),
 
     // Plugin: HtmlWebpackPlugin

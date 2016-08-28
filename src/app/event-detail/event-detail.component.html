@@ -1,0 +1,48 @@
+<img class="info-sponsor-img"
+    [attr.src]="'./thumbnails/' + event.sponsor + '.jpg'"
+    [attr.alt]="event.sponsor"
+    onerror="this.src='./thumbnails/alternative.jpg';">
+<div class="event-body">
+  <div class="row event-header">
+    <!--<div class="col-xs-2 col-md-2 info-sponsor">{{ sponsor.nickname || event.sponsor }}</div>-->
+    <h3 class="">
+      <span class="info-desc col-xs-8"
+          [innerHTML]="security.bypassSecurityTrustHtml(event.displayDescription || event.description)"></span>
+      <span class="info-time col-xs-4 text-right-xs">
+        <span class="tag tag-info">{{ displayTime }}</span>
+      </span>
+    </h3>
+    <div class="col-xs-4 col-md-2 info-time text-right-xs">
+    </div>
+  </div>
+  <div class="details" [class.details-open]="isOpen">
+    <div class="row">
+      <div class="hidden-sm-down col-md-3">{{ sponsor.letters }} - {{ sponsor.name }}</div>
+      <div class="col-sm-4 col-md-3 text-right-sm">Source:</div>
+      <div class="col-sm-8 col-md-6" *ngIf="event.source">
+        <vodka-source [source]="event.source"></vodka-source>
+      </div>
+    </div>
+    <div *ngIf="event.meetLocation && event.meetTime" class="row">
+      <div class="col-sm-4 col-md-6 text-right-sm">Meet:</div>
+      <div class="col-sm-8 col-md-6">
+        <vodka-location-time
+            [location]="event.meetLocation"
+            [locationAddress]="event.meetLocationAddress"
+            [locationHref]="event.hrefMeetLocation"
+            [time]="event.meetTime"></vodka-location-time>
+      </div>
+    </div>
+    <div *ngIf="event.location && event.startTime" class="row">
+      <div class="col-sm-4 col-md-6 text-right-sm">Event:</div>
+      <div class="col-sm-8 col-md-6">
+        <vodka-location-time
+            [location]="event.location"
+            [locationAddress]="event.locationAddress"
+            [locationHref]="event.hrefLocation"
+            [time]="event.startTime"
+            [timeEnd]="event.endTime"></vodka-location-time>
+      </div>
+    </div>
+  </div>
+</div>

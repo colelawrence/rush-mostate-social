@@ -7,6 +7,9 @@ const moment = require('moment')
   styles: [
 `:host {
   display: block;
+}
+.at {
+  color: grey;
 }`]
 })
 export class LocationTimeComponent implements OnInit {

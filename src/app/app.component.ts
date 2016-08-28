@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { DomSanitizationService } from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core'
 
 import { DataSummary, DataEvent, DataSponsor } from 'mostate-rush/data-interfaces'
 import { getData } from './get-data'
 
-import { LocationTimeComponent } from './location-time/location-time.component'
-import { SourceComponent } from './source/source.component'
+import { EventDetailComponent } from './event-detail/event-detail.component'
 
 const data: DataSummary = getData()
 
 @Component({
   selector: 'vodka',
   template: require('./app.component.html'),
-  directives: [LocationTimeComponent, SourceComponent],
+  directives: [EventDetailComponent],
   styles: [
 `:host {
   display: block;
@@ -23,6 +21,7 @@ require('!raw!stylus!./app.component.styl')
 export class AppComponent implements OnInit {
   data: DataSummary
   events: DataEvent[]
+  selectedEvent: DataEvent = null
   eventDays: {
     date: any,
     isToday: boolean,
@@ -31,7 +30,7 @@ export class AppComponent implements OnInit {
   sponsors: { [name: string]: DataSponsor }
   search: string
   moment: any
-  constructor(private security: DomSanitizationService) {
+  constructor() {
     this.data = data
     this.moment = require('moment')
     this.events = []
@@ -40,6 +39,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit () {
     this.update()
+    this.selectedEvent = this.events[0]
   }
 
   twitter(a: string) {
@@ -51,7 +51,6 @@ export class AppComponent implements OnInit {
   }
 
   dayTitle(m: any): string {
-    console.log(this.moment(m))
     return (<string> this.moment(m).calendar(null, {
       nextWeek: 'dddd, MMM Do',
       sameElse: 'dddd, MMM Do'

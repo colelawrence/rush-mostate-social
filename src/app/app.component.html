@@ -1,63 +1,27 @@
-<nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+<!--<nav class="navbar navbar-dark bg-inverse">
   <a class="navbar-brand" href="#" style="text-transform:uppercase;">mostate vodka</a>
   <!--<div id="navbar">
     <div class="pull-xs-right">
       <input type="text" [(ngModel)]="search" class="form-control" placeholder="Search...">
     </div>
-  </div>-->
-</nav>
-<div class="container" style="margin-top: 60px;">
+  </div>- ->
+</nav>-->
+<div class="container" style="">
   <div *ngFor="let eventDay of eventDays"
       class="event-day"
       [class.is-today]="eventDay.isToday">
-    <div class="row">
+    <div class="row text-center">
       <!--.format('MMM Do')-->
-      <h3>{{ dayTitle(eventDay.date) }}</h3>
+      <h2>--- {{ dayTitle(eventDay.date) }} ---</h2>
     </div>
-    <div *ngFor="let event of eventDay.events">
-      <div class="info-sponsor-img">
-        <img
-          [attr.src]="'./thumbnails/' + event.sponsor + '.jpg'"
-          [attr.alt]="event.sponsor"
-          onerror="this.src='alternative.jpg';">
-      </div>
-      <div class="event-body">
-        <div class="row event-header">
-          <!--<div class="col-xs-2 col-md-2 info-sponsor">{{ sponsors[event.sponsor].nickname || event.sponsor }}</div>-->
-          <div class="col-xs-8 col-md-10 info-desc" [innerHTML]="security.bypassSecurityTrustHtml(event.displayDescription || event.description)"></div>
-          <div class="col-xs-4 col-md-2 info-time">{{ moment(event.startTime || event.meetTime).format('h:mma') }}</div>
-        </div>
-        <div class="details">
-          <div class="row">
-            <div class="col-xs-3">{{ sponsors[event.sponsor].letters }} - {{ sponsors[event.sponsor].name }}</div>
-            <div class="col-xs-3 text-right">Source:</div>
-            <div class="col-xs-6" *ngIf="event.source">
-              <vodka-source [source]="event.source"></vodka-source>
-            </div>
-          </div>
-          <div *ngIf="event.meetLocation && event.meetTime" class="row">
-            <div class="col-xs-6 text-right">Meet:</div>
-            <div class="col-xs-6">
-              <vodka-location-time
-                  [location]="event.meetLocation"
-                  [locationAddress]="event.meetLocationAddress"
-                  [locationHref]="event.hrefMeetLocation"
-                  [time]="event.meetTime"></vodka-location-time>
-            </div>
-          </div>
-          <div *ngIf="event.location && event.startTime" class="row">
-            <div class="col-xs-6 text-right">Event:</div>
-            <div class="col-xs-6">
-              <vodka-location-time
-                  [location]="event.location"
-                  [locationAddress]="event.locationAddress"
-                  [locationHref]="event.hrefLocation"
-                  [time]="event.startTime"
-                  [timeEnd]="event.endTime"></vodka-location-time>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div *ngFor="let event of eventDay.events; let first = first">
+      <div class="event-divider" *ngIf="!first"></div>
+      <vodka-event-detail
+          [event]="event"
+          [sponsor]="sponsors[event.sponsor]"
+          [isOpen]="selectedEvent === event"
+          (click)="selectedEvent = event">
+      </vodka-event-detail>
     </div>
   </div>
 </div>
