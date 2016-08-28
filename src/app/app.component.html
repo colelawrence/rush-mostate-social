@@ -1,0 +1,79 @@
+<nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+  <a class="navbar-brand" href="#" style="text-transform:uppercase;">mostate vodka</a>
+  <!--<div id="navbar">
+    <div class="pull-xs-right">
+      <input type="text" [(ngModel)]="search" class="form-control" placeholder="Search...">
+    </div>
+  </div>-->
+</nav>
+<div class="container" style="margin-top: 60px;">
+  <div
+      class="row event-header"
+      *ngFor="let eventDay of eventDays">
+    <h3 class="event-day">{{ moment(eventDay.date).format('MMM Do') }}</h3>
+    <div *ngFor="let event of eventDay.events">
+      <div class="row event-header">
+        <div class="col-xs-1 info-sponsor-img">
+          <img
+            [attr.src]="'./thumbnails/' + event.sponsor + '.jpg'"
+            [attr.alt]="event.sponsor"
+            onerror="this.src='alternative.jpg';">
+        </div>
+        <div class="col-xs-3 info-sponsor">{{ sponsors[event.sponsor].nickname || event.sponsor }}</div>
+        <div class="col-xs-2 info-time">{{ moment(event.startTime || event.meetTime).format('h:mma') }}</div>
+        <div class="col-xs-5 info-desc" [innerHTML]="security.bypassSecurityTrustHtml(event.description)"></div>
+      </div>
+      <div class="row" style="font-size:.5em">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-5">{{ sponsors[event.sponsor].letters }} - {{ sponsors[event.sponsor].name }}</div>
+      </div>
+      <div *ngIf="event.meetLocation && event.meetTime" class="row" style="font-size:.5em">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-3">Meet:</div>
+        <div class="col-xs-8">
+          {{ event.meetLocation }}@{{ nToTime(event.meetTime) }}
+        </div>
+      </div>
+      <div *ngIf="event.location && event.startTime" class="row" style="font-size:.5em">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-3">Event:</div>
+        <div class="col-xs-8">
+          {{ event.location }}@{{ nToTime(event.startTime) }}{{ event.endTime ? '-' + nToTime(event.endTime) : ''  }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- events
+  "sponsors": {
+    "Alpha Kappa Lambda": {
+      "name": "Alpha Kappa Lambda",
+      "letters": "ΑΚΛ",
+      "nickname": "AKL",
+      "twitter": "@AKLBetaPsiMSU",
+      "colors": null
+    },
+ "events": [
+    {
+      "sponsor": "Alpha Kappa Lambda",
+      "description": "Meet and Greet",
+      "startTime": 1472511600000,
+      "endTime": 1472518800000,
+      "location": "Alpha Kappa Lambda House",
+      "locationAddress": "1043 East Cherry Street",
+      "meetTime": null,
+      "meetLocation": "",
+      "meetLocationAddress": ""
+    }
+    {
+      "sponsor": "Alpha Kappa Lambda",
+      "description": "Meet and Greet",
+      "startTime": 1472511600000,
+      "endTime": 1472518800000,
+      "location": "Alpha Kappa Lambda House",
+      "locationAddress": "1043 East Cherry Street",
+      "meetTime": null,
+      "meetLocation": "",
+      "meetLocationAddress": ""
+    },-->
