@@ -1,0 +1,16 @@
+<span *ngIf="locationAddress">
+  <a *ngIf="locationHref"
+      target="_blank"
+      [attr.href]="locationHref"
+      [attr.alt]="locationAddress"
+      [attr.title]="locationAddress"
+      [textContent]="'📍 ' + location"></a>
+  <span *ngIf="!locationHref">
+    {{location}}({{locationAddress}})
+  </span>
+</span>
+<span *ngIf="!locationAddress">
+  {{location}}
+</span>
+@
+{{ nToTime(time) }}{{ timeEnd ? '-' + nToTime(timeEnd) : ''  }}

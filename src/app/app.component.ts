@@ -4,11 +4,15 @@ import { DomSanitizationService } from '@angular/platform-browser';
 import { DataSummary, DataEvent, DataSponsor } from 'mostate-rush/data-interfaces'
 import { getData } from './get-data'
 
+import { LocationTimeComponent } from './location-time/location-time.component'
+import { SourceComponent } from './source/source.component'
+
 const data: DataSummary = getData()
 
 @Component({
   selector: 'vodka',
   template: require('./app.component.html'),
+  directives: [LocationTimeComponent, SourceComponent],
   styles: [
 `:host {
   display: block;
@@ -21,6 +25,7 @@ export class AppComponent implements OnInit {
   events: DataEvent[]
   eventDays: {
     date: any,
+    isToday: boolean,
     events: DataEvent[]
   }[] = []
   sponsors: { [name: string]: DataSponsor }
@@ -43,6 +48,14 @@ export class AppComponent implements OnInit {
 
   nToTime(n: number): string {
     return this.moment(new Date(n)).format('h:mma')
+  }
+
+  dayTitle(m: any): string {
+    console.log(this.moment(m))
+    return (<string> this.moment(m).calendar(null, {
+      nextWeek: 'dddd, MMM Do',
+      sameElse: 'dddd, MMM Do'
+    })).replace(/ at.*$/, '')
   }
 
   update() {
@@ -70,10 +83,13 @@ export class AppComponent implements OnInit {
     })
 
     this.eventDays = []
+    const today = this.moment(new Date())
     for (let time in eventDaysByTime) {
       const events = eventDaysByTime[time]
+      const date = new Date(+time)
       this.eventDays.push({
-        date: new Date(+time),
+        date,
+        isToday: this.moment(date).isSame(today, 'day'),
         events: events
       })
     }

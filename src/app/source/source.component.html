@@ -1,0 +1,7 @@
+<a *ngIf="isHref"
+      target="_blank"
+      [attr.href]="source"
+      [attr.alt]="displaySource"
+      [attr.title]="source"
+      [textContent]="'ℹ️ ' + displaySource"></a>
+<span *ngIf="!isHref">{{displaySource}}</span>

@@ -1,20 +1,31 @@
 .event-day {
   padding:1em;
-  color: white;
-  background: black;
+
+  h3 {
+    display: block;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 1em;
+  }
+
+  &.is-today {
+    border-bottom: 2px solid red;
+  }
+}
+.text-right { text-align: right; }
+
+.info-sponsor-img {
+  img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .row {
-  font-size: 48px;
+  font-size: 26px;
+}
 
-  .event-header {
-    margin-top: 1em;
-  }
-
-  .info-sponsor-img {
-    img {
-      width: 64px;
-      height: 64px;
-    }
-  }
+.details .row {
+  font-size: 18px;
 }

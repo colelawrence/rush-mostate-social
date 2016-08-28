@@ -3,6 +3,8 @@ const data = <DataSummary> require('mostate-rush/dist/events.json')
 
 export type DisplayEvent = DataEvent & {
   displayDescription?: string
+  hrefLocation?: string
+  hrefMeetLocation?: string
 }
 
 declare var twemoji: { parse: (str: string) => string }
@@ -23,11 +25,27 @@ const emojiFind = new RegExp(
   'gi')
 const emojiReplace = (match: string) => emojiByName[match.toLowerCase()]
 
-function replaceEventEmojis (a: DataEvent): DisplayEvent {
+function addEventEmojis (a: DataEvent): DisplayEvent {
   const unicoded = a.description.replace(emojiFind, emojiReplace)
   const displayDescription = twemoji.parse(unicoded)
   let b = <DisplayEvent>
     Object.assign({ displayDescription }, a)
+  return b
+}
+
+function addressToHref(address: string): string {
+  if (typeof address !== 'string' || address.length === 0) return null
+  // test if there are any breaks in the address, indicating that it may be outside Springfield
+  // add Springfield, MO otherwise
+  if (!/[;,]/.test(address)) address += ', Springfield, MO'
+  return `https://www.google.com/maps/place/${address}`
+}
+
+function replaceEventLocationLinks (a: DataEvent): DisplayEvent {
+  const hrefLocation = addressToHref(a.locationAddress)
+  const hrefMeetLocation = addressToHref(a.meetLocationAddress)
+  let b = <DisplayEvent>
+    Object.assign({}, a, { hrefLocation, hrefMeetLocation })
   return b
 }
 
@@ -41,8 +59,9 @@ function replaceEventSemicolons (a: DataEvent): DataEvent {
 export function getData(): DataSummary {
   let events: DataEvent[] = data.events
     .sort(compareEvents)
+    .map(replaceEventLocationLinks)
     .map(replaceEventSemicolons)
-    .map(replaceEventEmojis)
+    .map(addEventEmojis)
 
   return {
     events: events,
