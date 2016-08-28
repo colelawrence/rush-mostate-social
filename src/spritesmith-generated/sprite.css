@@ -17,2563 +17,2563 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 <i class="icon icon-home"></i>
 */
 .icon--1 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-+1 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-100 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-8ball {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-airplane {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-alien {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-ambulance {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-anchor {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -147px;
   width: 64px;
   height: 64px;
 }
 .icon-angel {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -147px;
   width: 64px;
   height: 64px;
 }
 .icon-angry {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -222px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-anguished {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -222px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-ant {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -222px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-apple {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -211px;
   width: 64px;
   height: 64px;
 }
 .icon-art {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -211px;
   width: 64px;
   height: 64px;
 }
 .icon-astonished {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -211px;
   width: 64px;
   height: 64px;
 }
 .icon-baby {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -211px;
   width: 64px;
   height: 64px;
 }
 .icon-back {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -286px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-balloon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -286px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-bamboo {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -286px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-banana {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -286px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-bangbang {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -275px;
   width: 64px;
   height: 64px;
 }
 .icon-barber {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -275px;
   width: 64px;
   height: 64px;
 }
 .icon-baseball {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -275px;
   width: 64px;
   height: 64px;
 }
 .icon-basketball {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -275px;
   width: 64px;
   height: 64px;
 }
 .icon-bath {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -275px;
   width: 64px;
   height: 64px;
 }
 .icon-bathtub {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -350px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-battery {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -350px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-bear {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -350px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-bee {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -350px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-beer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -350px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-beers {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-beetle {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-bell {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-bento {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-bicyclist {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-bike {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -339px;
   width: 64px;
   height: 64px;
 }
 .icon-bikini {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-bird {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-birthday {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-blossom {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-blowfish {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-blush {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -414px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-boar {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-boat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-bomb {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-book {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-bookmark {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-books {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-boom {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -403px;
   width: 64px;
   height: 64px;
 }
 .icon-boot {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-bouquet {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-bow {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-bowling {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-bowtie {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-boy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-bread {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -478px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-briefcase {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-bug {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-bulb {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-bus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-cactus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-cake {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-calendar {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-calling {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -467px;
   width: 64px;
   height: 64px;
 }
 .icon-camel {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-camera {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-candy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-car {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-cat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-cat2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-cd {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-cherries {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -542px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-chestnut {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-chicken {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-church {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-clap {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-clapper {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-clipboard {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-cloud {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-clubs {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-cocktail {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -531px;
   width: 64px;
   height: 64px;
 }
 .icon-coffee {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-collision {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-computer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-confounded {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-confused {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-construction {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-cookie {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-cop {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-copyright {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -606px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-corn {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-cow {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-crocodile {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-crown {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-cry {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-cupid {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-curry {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-custard {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-cyclone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-dancer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -595px;
   width: 64px;
   height: 64px;
 }
 .icon-dancers {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-dango {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-dart {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-dash {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-date {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-disappointed {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-dizzy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-dog {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-dollar {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-dolls {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -670px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-dolphin {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-donut {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-door {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-doughnut {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-dragon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-dress {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-droplet {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-dvd {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-ear {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-egg {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-eggplant {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -659px;
   width: 64px;
   height: 64px;
 }
 .icon-elephant {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-end {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-envelope {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-euro {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-exclamation {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-expressionless {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-eyeglasses {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-eyes {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-facepunch {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-family {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-fax {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -734px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-fearful {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-feelsgood {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-feet {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-finnadie {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-fire {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-fireworks {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-fish {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-fist {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-flag {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -75px;
   width: 72px;
   height: 72px;
 }
 .icon-flags {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-flashlight {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-flushed {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -723px;
   width: 64px;
   height: 64px;
 }
 .icon-football {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-fr {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-fries {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-frog {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-frowning {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-fu {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-fuelpump {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-gb {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-gem {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-gemini {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-ghost {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-gift {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -798px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-girl {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-goat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-goberserk {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-godmode {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-golf {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-grapes {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-grimacing {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-grin {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-grinning {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-guardsman {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-guitar {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-gun {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-haircut {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -787px;
   width: 64px;
   height: 64px;
 }
 .icon-hamburger {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-hammer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-hamster {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-hand {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-handbag {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-hankey {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-headphones {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-heart {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-heartbeat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-heartpulse {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-hearts {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-helicopter {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-herb {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -862px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-hibiscus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hocho {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hockey {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -72px -75px;
   width: 72px;
   height: 72px;
 }
 .icon-honeybee {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-horse {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hospital {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hotel {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hotsprings {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hourglass {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-house {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hurtrealbad {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-hushed {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-icecream {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-imp {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -851px;
   width: 64px;
   height: 64px;
 }
 .icon-innocent {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-interrobang {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-iphone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-jeans {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-joy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-jp {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-key {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-kimono {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-kiss {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-kissing {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-koala {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-koko {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-kr {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-laughing {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -926px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-leaves {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-ledger {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-lemon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-leopard {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -147px;
   width: 64px;
   height: 64px;
 }
 .icon-link {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-lips {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-lipstick {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-lock {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-lollipop {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-loudspeaker {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-mag {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-mahjong {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-mailbox {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-man {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-mask {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -915px;
   width: 64px;
   height: 64px;
 }
 .icon-massage {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-mega {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-melon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-memo {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-metal {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-microphone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-microscope {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-minibus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-minidisc {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-moneybag {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-monkey {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-monorail {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-moon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-mouse {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-mouse2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -990px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-moyai {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-muscle {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-mushroom {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-mute {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-neckbeard {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-necktie {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-newspaper {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-nose {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-notebook {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-notes {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-o {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-ocean {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-octocat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-octopus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-oden {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-office {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -960px -979px;
   width: 64px;
   height: 64px;
 }
 .icon-on {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-ox {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-package {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-pager {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-paperclip {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-peach {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-pear {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-pencil {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-pencil2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-penguin {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-pensive {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-persevere {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-phone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-pig {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-pig2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-pill {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1054px -960px;
   width: 64px;
   height: 64px;
 }
 .icon-pineapple {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-pizza {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-plus1 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-poodle {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-poop {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-postbox {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-pouch {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-pound {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-pray {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-princess {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-punch {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-purse {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-pushpin {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-question {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-rabbit {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-rabbit2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -960px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-racehorse {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1024px -1043px;
   width: 64px;
   height: 64px;
 }
 .icon-radio {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-rage {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-rage1 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-rage2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-rage3 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-rage4 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-ram {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-ramen {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-rat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-recycle {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-registered {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-relaxed {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-relieved {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-ribbon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-rice {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-ring {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -960px;
   width: 64px;
   height: 64px;
 }
 .icon-rocket {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1118px -1024px;
   width: 64px;
   height: 64px;
 }
 .icon-rooster {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-rose {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-rowboat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-runner {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-running {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-sailboat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-sake {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-sandal {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-santa {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-satellite {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-satisfied {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-saxophone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-school {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-scissors {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-scream {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-scroll {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -960px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-seat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1024px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-seedling {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1088px -1107px;
   width: 64px;
   height: 64px;
 }
 .icon-sheep {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-shell {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-shipit {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px 0px;
   width: 75px;
   height: 75px;
 }
 .icon-shirt {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-shit {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-shoe {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-shower {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-ski {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -448px;
   width: 64px;
   height: 64px;
 }
 .icon-skull {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-sleeping {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-sleepy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-smile {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-smiley {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-smirk {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-smoking {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-snail {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -960px;
   width: 64px;
   height: 64px;
 }
 .icon-snake {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -1024px;
   width: 64px;
   height: 64px;
 }
 .icon-snowboarder {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1182px -1088px;
   width: 64px;
   height: 64px;
 }
 .icon-snowflake {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-snowman {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sob {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-soccer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-soon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sound {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-spades {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-spaghetti {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sparkles {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-speaker {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-speedboat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-squirrel {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -75px 0px;
   width: 75px;
   height: 75px;
 }
 .icon-star {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-station {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-stew {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-strawberry {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -960px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sunflower {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1024px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sunglasses {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1088px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sunny {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1152px -1171px;
   width: 64px;
   height: 64px;
 }
 .icon-sunrise {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-surfer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-sushi {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-suspect {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-sweat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-swimmer {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-syringe {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-taco {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -150px 0px;
   width: 72px;
   height: 72px;
 }
 .icon-tada {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-tangerine {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-taxi {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-tea {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-telephone {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-telescope {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-tennis {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-thumbsdown {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -960px;
   width: 64px;
   height: 64px;
 }
 .icon-thumbsup {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -1024px;
   width: 64px;
   height: 64px;
 }
 .icon-ticket {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -1088px;
   width: 64px;
   height: 64px;
 }
 .icon-tiger {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1246px -1152px;
   width: 64px;
   height: 64px;
 }
 .icon-toilet {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tomato {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tongue {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tophat {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tractor {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-train {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-train2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tram {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -448px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-trident {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -512px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-triumph {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -576px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-trolleybus {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -640px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-trollface {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -704px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-trophy {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -768px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-truck {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -832px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-trumpet {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -896px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tshirt {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -960px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tulip {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1024px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-turtle {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1088px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-tv {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1152px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-umbrella {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1216px -1235px;
   width: 64px;
   height: 64px;
 }
 .icon-unamused {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px 0px;
   width: 64px;
   height: 64px;
 }
 .icon-underage {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -64px;
   width: 64px;
   height: 64px;
 }
 .icon-unlock {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -128px;
   width: 64px;
   height: 64px;
 }
 .icon-us {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -192px;
   width: 64px;
   height: 64px;
 }
 .icon-v {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -256px;
   width: 64px;
   height: 64px;
 }
 .icon-vhs {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -320px;
   width: 64px;
   height: 64px;
 }
 .icon-violin {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -384px;
   width: 64px;
   height: 64px;
 }
 .icon-volleyball {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -150px -72px;
   width: 72px;
   height: 72px;
 }
 .icon-walking {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -512px;
   width: 64px;
   height: 64px;
 }
 .icon-warning {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -576px;
   width: 64px;
   height: 64px;
 }
 .icon-watch {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -640px;
   width: 64px;
   height: 64px;
 }
 .icon-watermelon {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -704px;
   width: 64px;
   height: 64px;
 }
 .icon-wave {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -768px;
   width: 64px;
   height: 64px;
 }
 .icon-weary {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -832px;
   width: 64px;
   height: 64px;
 }
 .icon-wedding {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -896px;
   width: 64px;
   height: 64px;
 }
 .icon-whale {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -960px;
   width: 64px;
   height: 64px;
 }
 .icon-whale2 {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -1024px;
   width: 64px;
   height: 64px;
 }
 .icon-wheelchair {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -1088px;
   width: 64px;
   height: 64px;
 }
 .icon-wink {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -1152px;
   width: 64px;
   height: 64px;
 }
 .icon-wolf {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -1310px -1216px;
   width: 64px;
   height: 64px;
 }
 .icon-woman {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: 0px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-worried {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -64px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-wrench {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -128px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-x {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -192px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-yen {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -256px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-yum {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -320px -1299px;
   width: 64px;
   height: 64px;
 }
 .icon-zap {
-  background-image: url(sprite.png);
+  background-image: url(~sprite.png);
   background-position: -384px -1299px;
   width: 64px;
   height: 64px;
