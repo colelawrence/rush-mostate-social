@@ -218,7 +218,7 @@ module.exports = {
           css: helpers.root('src/spritesmith-generated/sprite.css')
         },
         apiOptions: {
-          cssImageRef: "~sprite.png"
+          cssImageRef: "sprite.png"
         }
     })
   ],
