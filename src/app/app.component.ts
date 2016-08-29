@@ -73,7 +73,7 @@ export class AppComponent implements OnInit {
 
     // divide events by time of day
     this.events.forEach((event) => {
-      let time = event.startTime || event.endTime || console.warn('Invalid time')
+      let time = event.startTime || event.meetTime || console.warn('Invalid time')
       let timeN = <number> this.moment(time).startOf('day').valueOf()
       if (!eventDaysByTime[timeN]) {
         eventDaysByTime[timeN] = []
