@@ -5,7 +5,26 @@ import { getData } from './get-data'
 
 import { EventDetailComponent } from './event-detail/event-detail.component'
 
+const Moment = require('moment')
+
 const data: DataSummary = getData()
+
+interface EventDay {
+  date: any,
+  isToday: boolean,
+  events: DataEvent[]
+}
+
+interface EventsByTime {
+  [time: number]: DataEvent[]
+}
+
+export interface EventFilter {
+  (event: DataEvent): boolean
+}
+export interface EventSorter {
+  (eventA: DataEvent, eventB: DataEvent): number
+}
 
 @Component({
   selector: 'vodka',
@@ -19,88 +38,89 @@ require('!raw!stylus!./app.component.styl')
   ]
 })
 export class AppComponent implements OnInit {
-  data: DataSummary
-  events: DataEvent[]
   selectedEvent: DataEvent = null
-  eventDays: {
-    date: any,
-    isToday: boolean,
-    events: DataEvent[]
-  }[] = []
+
+  eventDays: EventDay[] = []
+
   sponsors: { [name: string]: DataSponsor }
-  search: string
-  moment: any
   constructor() {
-    this.data = data
-    this.moment = require('moment')
-    this.events = []
     this.sponsors = data.sponsors
+  }
+
+  // Filters used to filter out events
+  getFilters(): EventFilter[] {
+    let timeNow = Date.now()
+    return [
+      (e) => isEventHappening(e, timeNow)
+    ]
   }
 
   ngOnInit () {
     this.update()
-    this.selectedEvent = this.events[0]
+    this.selectedEvent = this.eventDays[0].events[0] || null
   }
 
-  twitter(a: string) {
-    return a.replace(/^@/, '')
-  }
-
-  nToTime(n: number): string {
-    return this.moment(new Date(n)).format('h:mma')
-  }
-
-  dayTitle(m: any): string {
-    return (<string> this.moment(m).calendar(null, {
+  createDayTitle(m: any): string {
+    return (<string> Moment(m).calendar(null, {
       sameDay: '--- [Today] ---',
       nextDay: '--- [Tomorrow] ---',
-      lastDay: '[Yesterday]',
+      lastDay: '--- [Yesterday] ---',
       nextWeek: 'dddd, MMM Do',
       sameElse: 'dddd, MMM Do'
     })).replace(/ at.*$/, '')
   }
 
   update() {
-    if (this.search && this.search.length > 0) {
-      this.events = data.events.filter(
-        (evt) => evt.description.toLowerCase().indexOf(this.search.toLowerCase()) !== -1
-      )
-    } else {
-      this.events = data.events
+    let events = data.events
+
+    for (let filter of this.getFilters()) {
+      events = events.filter(filter)
     }
 
-    let nNow = Date.now()
-    this.events = this.events.filter((e) => (e.startTime || e.meetTime || 0) > nNow)
-
-    let eventDaysByTime: {[time: number]: DataEvent[]} = {};
-
-    // divide events by time of day
-    this.events.forEach((event) => {
-      let time = event.startTime || event.meetTime || console.warn('Invalid time')
-      let timeN = <number> this.moment(time).startOf('day').valueOf()
-      if (!eventDaysByTime[timeN]) {
-        eventDaysByTime[timeN] = []
-      }
-      eventDaysByTime[timeN].push(event)
-    })
-
-    this.eventDays = []
-    const today = this.moment(new Date())
-    for (let time in eventDaysByTime) {
-      const events = eventDaysByTime[time]
-      const date = new Date(+time)
-      this.eventDays.push({
-        date,
-        isToday: this.moment(date).isSame(today, 'day'),
-        events: events
-      })
-    }
+    const eventsByTime = sortEventsByDay(events)
+    const eventDays = createEventDays(eventsByTime)
+    this.eventDays = eventDays
   }
 }
 
+function sortEventsByDay(events: DataEvent[]): EventsByTime {
+  let eventDaysByTime: EventsByTime = {};
 
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+  // divide events by time of day
+  events.forEach((event) => {
+    let time = event.startTime || event.meetTime || console.warn('Invalid time')
+    let timeN = <number> Moment(time).startOf('day').valueOf()
+    if (!eventDaysByTime[timeN]) {
+      eventDaysByTime[timeN] = []
+    }
+    eventDaysByTime[timeN].push(event)
+  })
+
+  return eventDaysByTime
+}
+
+function isEventHappening(event: DataEvent, timeNow: number): boolean {
+  // 1000ms * 60s * 60min
+  const hour = 36e5
+  // has not ended
+  if (event.endTime && event.endTime > timeNow) return true
+  // if event started or starts less than an hour ago, or has not finished yet
+  if ((event.startTime || event.meetTime || 0) > timeNow - hour) return true
+  return false
+}
+
+function createEventDays(eventsByTime: EventsByTime): EventDay[] {
+    let eventDays: EventDay[] = []
+    const today = Moment(new Date())
+    for (let time in eventsByTime) {
+      const events = eventsByTime[time]
+      const date = new Date(+time)
+      eventDays.push({
+        date,
+        isToday: Moment(date).isSame(today, 'day'),
+        events: events
+      })
+    }
+
+    return eventDays
+}

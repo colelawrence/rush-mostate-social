@@ -11,7 +11,7 @@
       class="event-day"
       [class.is-today]="eventDay.isToday">
     <div class="row text-center">
-      <h2>{{ dayTitle(eventDay.date) }}</h2>
+      <h2>{{ createDayTitle(eventDay.date) }}</h2>
     </div>
     <div *ngFor="let event of eventDay.events; let first = first">
       <div class="event-divider" *ngIf="!first"></div>
