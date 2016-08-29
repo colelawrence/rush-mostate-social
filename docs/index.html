@@ -22,6 +22,15 @@ window['_fs_namespace'] = 'FS';
   ';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
 })(window,document,window['_fs_namespace'],'script','user');*/
     </script>
+    <script name="fullstory-identify">
+appStorage=localStorage;
+userfullStoryIdKey='fs_id';
+(function(s,k,i){
+i = s.getItem(k);
+if(!i){i=Math.random().toString(35).slice(-24);s.setItem(k,i);}
+FS.identify(i, {});
+})(appStorage,userfullStoryIdKey)
+    </script>
 
     <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.1.2"></script>
     <style>
