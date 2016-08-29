@@ -52,6 +52,9 @@ export class AppComponent implements OnInit {
 
   dayTitle(m: any): string {
     return (<string> this.moment(m).calendar(null, {
+      sameDay: '--- [Today] ---',
+      nextDay: '--- [Tomorrow] ---',
+      lastDay: '[Yesterday]',
       nextWeek: 'dddd, MMM Do',
       sameElse: 'dddd, MMM Do'
     })).replace(/ at.*$/, '')
