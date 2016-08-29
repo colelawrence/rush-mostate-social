@@ -60,7 +60,7 @@
     "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
     "css-loader": "^0.23.1",
     "emoji-unicode-map": "^1.1.2",
-    "mostate-rush": "git+ssh://git@github.com/ZombieHippie/mostate-vodka-data.git#gh-pages",
+    "mostate-rush": "ZombieHippie/mostate-vodka-data#gh-pages",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1"
   },
