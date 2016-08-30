@@ -197,6 +197,9 @@ module.exports = {
       from: '.github/CNAME',
       to: ''
     }, {
+      from: 'src/images',
+      to: 'images'
+    }, {
       from: 'src/assets',
       to: 'assets'
     }]),

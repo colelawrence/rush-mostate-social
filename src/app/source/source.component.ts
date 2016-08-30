@@ -7,14 +7,24 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SourceComponent implements OnInit {
   @Input() source: string
   displaySource: string
-  isHref: boolean = false
+  href: string
   ngOnInit () {
-    this.isHref = /^\s*https?/.test(this.source)
+    const isHref = /^\s*https?/.test(this.source)
+    const isImage = /^\s*image:/.test(this.source)
     this.displaySource = this.source
-    if (this.isHref) {
-      this.displaySource = this.displaySource
-          .replace(/^\s*https?:\/\//, '')
-          .replace(/\/.+$/, '')
+    if (isHref) {
+      this.href = this.source
+      this.displaySource = 'ℹ ️️' + this.displaySource
+          .replace(/^\s*https?:\/\/(www\.)?/, '')
+          .replace(/(\/[^\/\d]+)([\/\d].+)?$/, '$1')
+          .replace(/[^a-zA-Z]+$/, '')
+    } else if (isImage) {
+      const filename = this.source
+          .replace(/^\s*image:/, '')
+          .replace(/ /g, '-') + '.png'
+      this.href = `./images/sources/${filename}`
+      this.displaySource = '📷 ' + this.displaySource
+          .replace(/^\s*image:/, '')
     }
   }
 }

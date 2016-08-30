@@ -9,7 +9,7 @@
       <span class="info-desc col-xs-8"
           [innerHTML]="security.bypassSecurityTrustHtml(event.displayDescription || event.description)"></span>
       <span class="info-time col-xs-4 text-right-xs">
-        <span class="tag tag-info">{{ displayTime }}</span>
+        <span class="tag tag-info" [class.tag-default]="event.started">{{ event.started ? "NOW" : displayTime }}</span>
       </span>
     </h3>
     <div class="col-xs-4 col-md-2 info-time text-right-xs">

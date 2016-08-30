@@ -24,6 +24,6 @@ export class EventDetailComponent implements OnInit {
   }
   ngOnInit () {
     const time = this.event.startTime || this.event.meetTime
-    this.displayTime = this.moment(time).format('h:mma').replace(/:00/, ' ')
+    this.displayTime = this.moment(time).format('h:mm a').replace(/:00/, '')
   }
 }

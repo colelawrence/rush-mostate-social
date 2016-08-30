@@ -77,6 +77,13 @@ export class AppComponent implements OnInit {
       events = events.filter(filter)
     }
 
+    let timeNow = Date.now()
+    events.forEach((e) => {
+      if (hasEventStarted(e, timeNow)) {
+        (<any> e).started = true
+      }
+    })
+
     const eventsByTime = sortEventsByDay(events)
     const eventDays = createEventDays(eventsByTime)
     this.eventDays = eventDays
@@ -101,11 +108,16 @@ function sortEventsByDay(events: DataEvent[]): EventsByTime {
 
 function isEventHappening(event: DataEvent, timeNow: number): boolean {
   // 1000ms * 60s * 60min
-  const hour = 36e5
+  const hour = 36e5 * 4 // four hours
   // has not ended
-  if (event.endTime && event.endTime > timeNow) return true
+  if (event.endTime) { if (event.endTime > timeNow) return true; else return false }
   // if event started or starts less than an hour ago, or has not finished yet
   if ((event.startTime || event.meetTime || 0) > timeNow - hour) return true
+  return false
+}
+function hasEventStarted(event: DataEvent, timeNow: number): boolean {
+  // if event started or starts less than an hour ago, or has not finished yet
+  if ((event.startTime || event.meetTime || 0) < timeNow) return true
   return false
 }
 
