@@ -14,3 +14,7 @@ border-radius: .25rem;
 .tag-info {
 background-color: #5bc0de;
 }
+.tag-default {
+background-color: white;
+color: black;
+}
