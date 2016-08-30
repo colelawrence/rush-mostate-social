@@ -10,7 +10,7 @@ appStorage=localStorage;
 (function(s,k,l,r,q){
 q=r.exec(l.search)
 if(q){s.setItem(k,q[1]);l.search=l.search.replace(r,'')}
-})(appStorage,'fs_id',location,/vodka=(\w+)/)
+})(appStorage,'fs_id',location,/vodka=(\w+)/);
     </script>
 <% if (!webpackConfig.debug) { %>
     <script name="fullstory">
