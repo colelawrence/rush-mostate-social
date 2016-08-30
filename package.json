@@ -61,6 +61,7 @@
     "css-loader": "^0.23.1",
     "emoji-unicode-map": "^1.1.2",
     "mostate-rush": "ZombieHippie/mostate-vodka-data#gh-pages",
+    "rxjs": "^5.0.0-beta.11",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1"
   },
