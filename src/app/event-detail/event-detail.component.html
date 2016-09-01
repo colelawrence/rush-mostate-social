@@ -1,7 +1,9 @@
-<img class="info-sponsor-img"
-    [attr.src]="'./thumbnails/' + event.sponsor + '.jpg'"
-    [attr.alt]="event.sponsor"
-    onerror="this.src='./thumbnails/alternative.jpg';">
+<div class="info-sponsor-thumbnail">
+  <img [attr.src]="'./thumbnails/' + event.sponsor + '.jpg'"
+      [attr.alt]="event.sponsor"
+      onerror="this.src='./thumbnails/alternative.jpg';">
+  <!--<div class="nickname" [class.nickname-show]="isOpen">{{ sponsor.nickname || sponsor.name }}</div>-->
+</div>
 <div class="event-body">
   <div class="row event-header">
     <!--<div class="col-xs-2 col-md-2 info-sponsor">{{ sponsor.nickname || event.sponsor }}</div>-->
@@ -12,13 +14,11 @@
         <span class="tag tag-info" [class.tag-default]="event.started">{{ event.started ? "NOW" : displayTime }}</span>
       </span>
     </h3>
-    <div class="col-xs-4 col-md-2 info-time text-right-xs">
-    </div>
   </div>
   <div class="details" [class.details-open]="isOpen">
     <div class="row">
-      <div class="hidden-sm-down col-md-3">{{ sponsor.letters }} - {{ sponsor.name }}</div>
-      <div class="col-sm-4 col-md-3 text-right-sm">Source:</div>
+      <div class="hidden-sm-down col-md-4">{{ sponsor.letters }} - {{ sponsor.name }}</div>
+      <div class="col-sm-4 col-md-2 text-right-sm">Source:</div>
       <div class="col-sm-8 col-md-6" *ngIf="event.source">
         <vodka-source [source]="event.source"></vodka-source>
       </div>

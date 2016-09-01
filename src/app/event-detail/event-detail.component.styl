@@ -1,13 +1,14 @@
 
 :host {
-  padding: 1em 0;
+  padding: 14px 0;
   display: block;
-  min-height: 42px;
+  min-height: (42px + 14px * 2);
   @media (min-width: 544px) {
-    min-height: 72px;
+    min-height: (64px + 14px * 2);
   }
 }
 h3 {
+  margin: 0;
   @media (max-width: 544px) {
     font-size: 1.2em;
   }
@@ -32,15 +33,31 @@ h3 {
   }
 }
 
-img.info-sponsor-img {
+.info-sponsor-thumbnail {
   position: absolute;
-  width: 42px;
-  height: 42px;
-  @media (min-width: 544px) {
-    width: 64px;
-    height: 64px;
-    margin-top: 8px;
+  text-align: center;
+  img {
+    width: 42px;
+    height: 42px;
+    @media (min-width: 544px) {
+      width: 64px;
+      height: 64px;
+      margin-top: 8px;
+    }
   }
+  /*
+  .nickname {
+    font-size: .6em;
+    padding: .3em;
+    background: #dbdbdb;
+    @media (max-width: 768px) {
+      opacity: 0;
+      transition: opacity .4s;
+    }
+    &.nickname-show {
+      opacity: 1;
+    }
+  } */
 }
 
 .details {
