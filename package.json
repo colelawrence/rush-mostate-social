@@ -60,6 +60,7 @@
     "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
     "css-loader": "^0.23.1",
     "emoji-unicode-map": "^1.1.2",
+    "moment": "^2.14.1",
     "mostate-rush": "ZombieHippie/mostate-vodka-data#gh-pages",
     "rxjs": "^5.0.0-beta.11",
     "stylus": "^0.54.5",
