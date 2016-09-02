@@ -79,6 +79,11 @@ export class AppComponent implements OnInit {
     }, 500)
   }
 
+  openSearch() {
+    this.sponsorSearch.selectNone()
+    this.searchOpen = !this.searchOpen
+  }
+
   cancelSearch() {
     this.searchFilter = null
     this.isSearchApplied = false

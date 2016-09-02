@@ -15,7 +15,7 @@
         [class.search-open]="searchOpen"
         [class.search-applied]="isSearchApplied">
       <span (click)="cancelSearch()" class="cancel-search">✖️</span>
-      <span (click)="searchOpen = !searchOpen" class="search-btn">🔎 <span class="chevron"></span></span>
+      <span (click)="openSearch()" class="search-btn">🔎 <span class="chevron"></span></span>
     </div>
   </div>
   <vodka-sponsor-search class="search-options row"
