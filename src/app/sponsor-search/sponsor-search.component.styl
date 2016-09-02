@@ -1,0 +1,42 @@
+.sponsor-container {
+  text-align: center;
+}
+.action-bar {
+  text-align: right;
+  padding: .5em;
+  background: #4b4b4b;
+}
+.sponsor-check {
+  display: inline-block;
+  overflow: hidden;
+  margin: .5rem;
+  img {
+    width: 2em;
+    height: 2em;
+  }
+  .btn {
+    img {
+      opacity: .6
+    }
+    color: #888;
+    font-size: 14px;
+    background: #dbdbdb;
+    padding-left: .375rem;
+  }
+  @media (min-width: 678px) {
+    .btn {
+      font-size: 24px;
+    }
+  }
+  &.sponsor-selected {
+    .btn {
+      img {
+        opacity: 1
+      }
+      color: #fff;
+      background-color: #014682;
+      border-color: #01315a;
+
+    }
+  }
+}

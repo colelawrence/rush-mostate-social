@@ -7,14 +7,30 @@
   </div>- ->
 </nav>-->
 <div class="container" style="">
+  <div class="row header">
+    <div class="branding">
+      <a href="http://parrot.social"><img class="emoji" draggable="false" alt="Parrot Social" src="./images/parrot-emoji.png"></a>
+    </div>
+    <div class="search-bar"
+        [class.search-open]="searchOpen"
+        [class.search-applied]="isSearchApplied">
+      <span (click)="cancelSearch()" class="cancel-search">✖️</span>
+      <span (click)="searchOpen = !searchOpen" class="search-btn">🔎 <span class="chevron"></span></span>
+    </div>
+  </div>
+  <vodka-sponsor-search class="search-options row"
+      [class.search-open]="searchOpen"
+      [sponsorsByName]="sponsors"
+      [eventDays]="eventDays"
+      (change)="changeSearch($event)"
+      (close)="searchOpen = false"
+      (cancel)="cancelSearch()">
+  </vodka-sponsor-search>
   <div *ngFor="let eventDay of eventDays"
       class="event-day"
       [class.is-today]="eventDay.isToday">
     <div class="row text-center">
       <h2>{{ createDayTitle(eventDay.date) }}</h2>
-      <div *ngIf="eventDay.isToday" class="branding">
-        <a href="http://parrot.social"><img class="emoji" draggable="false" alt="Parrot Social" src="./images/parrot-emoji.png"></a>
-      </div>
     </div>
     <div *ngFor="let event of eventDay.events; let first = first">
       <div class="event-divider" *ngIf="!first"></div>

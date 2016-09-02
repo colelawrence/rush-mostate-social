@@ -4,23 +4,80 @@
     background: #2B2B2B;
     color: white;
     margin: 0;
-    padding: .5em .1em;
+    padding: 1rem .2rem;
     text-align: center;
   }
 
   margin-bottom: 10vh;
 
+}
+
+.search-bar {
+  .search-btn, .cancel-search {
+    cursor: pointer
+  }
+  .chevron::after {
+    // borrowed from bootstrap dropdown arrow
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+  }
+  &.search-open .chevron::after {
+    transform: rotate(180deg)
+  }
+}
+
+.header {
   position: relative;
+  background: #444;
+  color: white;
+  text-align: center;
+  height: 67px;
 
   .branding {
     position: absolute;
     left: 0;
+    top: 67px
     font-size: 4rem;
     img {
       z-index: 1;
       position: relative;
       margin-top: -68.18%;
     }
+  }
+
+  .search-bar {
+    z-index: 1;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    color: white
+
+    .cancel-search {
+      opacity: 0
+      transition: opacity .3s
+      color: red
+    }
+
+    &.search-applied {
+      .cancel-search {
+        opacity: 1
+      }
+    }
+  }
+}
+
+.search-options {
+  transition: max-height .4s
+  max-height: 0;
+  overflow: hidden
+  &.search-open {
+    max-height: 100%
   }
 }
 

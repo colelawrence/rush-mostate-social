@@ -1,35 +1,25 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, ViewChild } from '@angular/core'
 
 import { DataSummary, DataEvent, DataSponsor } from 'mostate-rush/data-interfaces'
 import { getData } from './get-data'
-
-import { EventDetailComponent } from './event-detail/event-detail.component'
+import { EventDay, EventFilter, EventSorter } from './shared/event-interfaces.ts'
 
 const Moment = require('moment')
 
+import { EventDetailComponent } from './event-detail/event-detail.component'
+import { SponsorSearchComponent } from './sponsor-search/sponsor-search.component'
+
 const data: DataSummary = getData()
 
-interface EventDay {
-  date: any,
-  isToday: boolean,
-  events: DataEvent[]
-}
 
 interface EventsByTime {
   [time: number]: DataEvent[]
 }
 
-export interface EventFilter {
-  (event: DataEvent): boolean
-}
-export interface EventSorter {
-  (eventA: DataEvent, eventB: DataEvent): number
-}
-
 @Component({
   selector: 'vodka',
   template: require('./app.component.html'),
-  directives: [EventDetailComponent],
+  directives: [EventDetailComponent, SponsorSearchComponent],
   styles: [
 `:host {
   display: block;
@@ -40,7 +30,13 @@ require('!raw!stylus!./app.component.styl')
 export class AppComponent implements OnInit {
   selectedEvent: DataEvent = null
 
+  @ViewChild(SponsorSearchComponent) sponsorSearch: SponsorSearchComponent;
+
   eventDays: EventDay[] = []
+
+  searchOpen: boolean = false
+  searchFilter: EventFilter
+  isSearchApplied: boolean
 
   sponsors: { [name: string]: DataSponsor }
   constructor() {
@@ -50,9 +46,45 @@ export class AppComponent implements OnInit {
   // Filters used to filter out events
   getFilters(): EventFilter[] {
     let timeNow = Date.now()
-    return [
+    let filters: EventFilter[] = [
       (e) => isEventHappening(e, timeNow)
     ]
+
+    if (this.isSearchApplied) filters.push(this.searchFilter)
+
+    console.log("filters", this.isSearchApplied, filters)
+
+    return filters
+  }
+
+  changeSearch(selectedSponsorsObject: {[sponsor: string]: boolean}) {
+
+    console.log(selectedSponsorsObject)
+
+    // none selected
+    const selKeys = Object.keys(selectedSponsorsObject)
+    const selected = selKeys.filter((sponsorName) => selectedSponsorsObject[sponsorName]).length
+
+    const sponKeys = Object.keys(this.sponsors)
+    if (sponKeys.length === selected) {
+      this.isSearchApplied = false
+
+    } else {
+      // Set up search for filtering events
+      this.searchFilter = (e) => selectedSponsorsObject[e.sponsor]
+      this.isSearchApplied = true
+    }
+
+    // update event list
+    this.update()
+  }
+
+  cancelSearch() {
+    this.searchFilter = null
+    this.isSearchApplied = false
+    this.sponsorSearch.selectAll()
+    this.searchOpen = false
+    this.update()
   }
 
   ngOnInit () {

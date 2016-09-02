@@ -1,0 +1,37 @@
+<div class="action-bar">
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger"
+        (click)="cancel.emit()">
+      Cancel
+    </button>
+    <button type="button" class="btn btn-default"
+        (click)="selectNone()">
+      ✔️ None
+    </button>
+    <button type="button" class="btn btn-default"
+        (click)="selectAll()">
+      ✔️ All
+    </button>
+    <button type="button" class="btn btn-success"
+        (click)="close.emit()">
+      Apply
+    </button>
+  </div>
+</div>
+<div class="sponsor-container">
+  <div *ngFor="let sponsor of sponsors"
+      class="sponsor-check"
+      [class.sponsor-selected]="isSelected(sponsor)"
+      (click)="toggle(sponsor)">
+    <div class="btn">
+      <img onerror="this.src='./thumbnails/alternative.jpg';"
+          [attr.src]="'./thumbnails/' + sponsor.name + '.jpg'"
+          [attr.alt]="">
+      {{ sponsor.letters ? sponsor.letters + ' - ' : '' }}
+      {{ sponsor.nickname || sponsor.name }}
+      <span class="sponsor-filter" [textContent]="getSponsorInclusionText(sponsor)"></span>
+    </div>
+  </div>
+</div>
+<br>
+<br>
