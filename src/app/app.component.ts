@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core'
+import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core'
 
 import { DataSummary, DataEvent, DataSponsor } from 'mostate-rush/data-interfaces'
 import { getData } from './get-data'
@@ -37,9 +37,10 @@ export class AppComponent implements OnInit {
   searchOpen: boolean = false
   searchFilter: EventFilter
   isSearchApplied: boolean
+  changeSearchTimer: NodeJS.Timer
 
   sponsors: { [name: string]: DataSponsor }
-  constructor() {
+  constructor(private changes: ChangeDetectorRef) {
     this.sponsors = data.sponsors
   }
 
@@ -71,7 +72,11 @@ export class AppComponent implements OnInit {
     }
 
     // update event list
-    this.update()
+    clearTimeout(this.changeSearchTimer)
+    this.changeSearchTimer = setTimeout(() => {
+      this.update()
+      this.changes.detectChanges()
+    }, 500)
   }
 
   cancelSearch() {

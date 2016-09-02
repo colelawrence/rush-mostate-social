@@ -21,7 +21,7 @@
 <div class="sponsor-container">
   <div *ngFor="let sponsor of sponsors"
       class="sponsor-check"
-      [class.sponsor-selected]="isSelected(sponsor)"
+      [class.sponsor-selected]="sponsor.__selected"
       (click)="toggle(sponsor)">
     <div class="btn">
       <img onerror="this.src='./thumbnails/alternative.jpg';"

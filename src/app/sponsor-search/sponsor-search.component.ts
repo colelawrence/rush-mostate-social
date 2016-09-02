@@ -35,26 +35,24 @@ export class SponsorSearchComponent implements OnInit, OnChanges {
   }
 
   selectAll() {
-    let sel: SelectedSponsors = {}
-    this.sponsors.forEach((s) => sel[s.name] = true)
-
-    this.selectedSponsors = sel
+    this.sponsors.forEach((s) => this.select(s, true))
     this.emitChange()
   }
 
   selectNone() {
-    let sel: SelectedSponsors = {}
-    this.selectedSponsors = sel
+    this.sponsors.forEach((s) => this.select(s, false))
     this.emitChange()
   }
 
 
   select(sponsor: DataSponsor, select: boolean) {
+    (<any>sponsor).__selected = select
     this.selectedSponsors[sponsor.name] = select
   }
 
   toggle(sponsor: DataSponsor) {
-    this.select(sponsor, !this.isSelected(sponsor))
+    // naughty for performance
+    this.select(sponsor, !(<any>sponsor).__selected)
     this.emitChange()
   }
 
@@ -100,6 +98,6 @@ export class SponsorSearchComponent implements OnInit, OnChanges {
   }
 
   private emitChange() {
-    this.change.emit(this.selectedSponsors)
+    setTimeout(() => this.change.emit(this.selectedSponsors), 1)
   }
 }
