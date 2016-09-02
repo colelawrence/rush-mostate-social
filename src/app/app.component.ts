@@ -52,15 +52,10 @@ export class AppComponent implements OnInit {
 
     if (this.isSearchApplied) filters.push(this.searchFilter)
 
-    console.log("filters", this.isSearchApplied, filters)
-
     return filters
   }
 
   changeSearch(selectedSponsorsObject: {[sponsor: string]: boolean}) {
-
-    console.log(selectedSponsorsObject)
-
     // none selected
     const selKeys = Object.keys(selectedSponsorsObject)
     const selected = selKeys.filter((sponsorName) => selectedSponsorsObject[sponsorName]).length
