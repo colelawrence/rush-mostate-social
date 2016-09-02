@@ -89,7 +89,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit () {
     this.update()
-    this.selectedEvent = this.eventDays[0].events[0] || null
+    if (this.eventDays.length > 0) {
+      this.selectedEvent = this.eventDays[0].events[0] || null
+    }
   }
 
   createDayTitle(m: any): string {
