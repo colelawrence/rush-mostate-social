@@ -1,8 +1,11 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { NgModule, enableProdMode } from '@angular/core';
+import { BrowserModule }            from '@angular/platform-browser';
+import { FormsModule }              from '@angular/forms';
 
 import { AppComponent }  from './app.component';
+
+// add enableProd to window so it can be called to boost performance
+if (location.hostname !== "localhost") enableProdMode()
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -11,9 +14,3 @@ import { AppComponent }  from './app.component';
 })
 export class AppModule { }
 
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
