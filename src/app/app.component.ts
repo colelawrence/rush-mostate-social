@@ -44,6 +44,21 @@ export class AppComponent implements OnInit {
     this.sponsors = data.sponsors
   }
 
+  private dismissedAlertsKey = 'app:dismissed-alerts'
+  private openAlerts: {[id: string]: boolean} = {}
+  closeAlert (alertName: string) {
+    this.openAlerts[alertName] = false
+    let als = <string>localStorage.getItem(this.dismissedAlertsKey) ||''
+    als += ',' + alertName
+    localStorage.setItem(this.dismissedAlertsKey, als);
+  }
+  openAlert (alertName: string) {
+    this.openAlerts[alertName] = true
+  }
+  isAlertOpen (alertName: string) {
+    return !!this.openAlerts[alertName]
+  }
+
   // Filters used to filter out events
   getFilters(): EventFilter[] {
     let timeNow = Date.now()
@@ -93,6 +108,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit () {
+    // Todo check if they have dismissed this alert before with localstorage
+    const alerts = <string> localStorage.getItem(this.dismissedAlertsKey) || ''
+    if (true || alerts.indexOf('new-website') === -1) {
+      this.openAlert("new-website")
+    }
+
     this.update()
     if (this.eventDays.length > 0) {
       this.selectedEvent = this.eventDays[0].events[0] || null

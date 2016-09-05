@@ -7,9 +7,22 @@
   </div>- ->
 </nav>-->
 <div class="container" style="">
+  <div class="row alert-container" [class.alert-open]="isAlertOpen('new-website')">
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <strong><a href="http://events.mostate.social">🌟 events.mostate.social</a> is ready!</strong> And we're taking <a title="Submit an event!" href="http://event.mostate.social?submit-an-event=1">submissions for campus wide events</a> now!
+      <button class="close" (click)="closeAlert('new-website')"><span aria-hidden="true">&times;</span></button>
+    </div>
+  </div>
   <div class="row header">
     <div class="branding">
       <a href="http://parrot.social"><img class="emoji" draggable="false" alt="Parrot Social" src="./images/parrot-emoji.png"></a>
+    </div>
+    <div class="submit-link">
+      <ul class="nav nav-pills" style="font-size:1rem;">
+        <li class="nav-item">
+          <a class="nav-link" href="http://events.mostate.social">🌟 events.mostate.social</a>
+        </li>
+      </ul>
     </div>
     <div class="search-bar"
         [class.search-open]="searchOpen"
@@ -43,11 +56,17 @@
     </div>
   </div>
   <div class="footer row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">Don't see an event on here? Submit your event to
-      <a href="mailto:submit@parrot.social">submit@parrot.social</a>
+    <div class="col-xs-12">
+      This software is provided to you by the talent of <a href="http://parrot.social">Parrot Social</a>. If you are interested in what we do, please consider contacting us and getting involved with our efforts to make events and clubs more accessible to students.
+      Email us at <a href="mailto:info@parrot.social">info@parrot.social</a> to start a conversation!
     </div>
-    <div class="col-md-4"></div>
+    <div class="col-xs-12" style="margin-top:.5rem;">
+      <small style="color:darkgray">
+        <strong>Notice, </strong>
+        rush.mostate.social, and all subdomains of .mostate.social are not currently associated with the institution of Missouri State University.<br>
+        These softwares are developed by students of Missouri State University, but are not built with the assistance or involvement of any member of Missouri State University faculty or coursework.
+      </small>
+    </div>
   </div>
 </div>
 
