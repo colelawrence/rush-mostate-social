@@ -110,7 +110,7 @@ export class AppComponent implements OnInit {
   ngOnInit () {
     // Todo check if they have dismissed this alert before with localstorage
     const alerts = <string> localStorage.getItem(this.dismissedAlertsKey) || ''
-    if (true || alerts.indexOf('new-website') === -1) {
+    if (alerts.indexOf('new-website') === -1) {
       this.openAlert("new-website")
     }
 
